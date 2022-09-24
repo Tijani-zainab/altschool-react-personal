@@ -13,6 +13,11 @@ function Routing() {
                 <Route path="/avater" element={<Avater />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
+
+            {/* Nested Routes */}
+            {/* <Route path="/users" element={<Users />}> 
+                <Route path=":userId" element={<User />} /> 
+            </Route> */}
         </div>
     );
 }

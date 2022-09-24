@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import "../App.css";
 
 
 function Home() { 
@@ -76,8 +77,7 @@ function Home() {
 
     return (
         <div className="home">
-            <div className="items"> 
-                {/* {dataLists}  */}
+            <div className="news"> 
                 {loading ? (<div>Loading...</div>) : (
                 <div className="news-item">
                     <h1>{items.title}</h1>

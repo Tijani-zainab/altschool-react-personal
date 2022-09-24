@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import "../App.css";
 
 function Layout(props) { 
 
@@ -11,8 +12,8 @@ function Layout(props) {
 
     return (
         <div className="layout">
-            <NavLink to="/" style={({isActive}) => isActive ? activeStyle : undefined} >Home</NavLink>
-            <NavLink to="/errorPage" style={({isActive}) => isActive ? activeClassName : undefined}>ErrorPage</NavLink>
+            <NavLink className="layout--item" to="/" style={({isActive}) => isActive ? activeStyle : undefined} >Home</NavLink>
+            <NavLink className="layout--item" to="/errorPage" style={({isActive}) => isActive ? activeClassName : undefined}>ErrorPage</NavLink>
         </div>
     );
 }
