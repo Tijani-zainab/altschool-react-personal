@@ -1,11 +1,11 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
-import Home from "./pages/home";
+import Home from "../home";
 import Avater from "../../components/avater";
-import ErrorPage from './pages/errorPage';
+import ErrorPage from "../errorPage";
 
 
-function Routes() {
+function Routing() {
     return (
         <div className="routes">
             <Routes>
@@ -17,4 +17,4 @@ function Routes() {
     );
 }
 
-export default Routes;
+export default Routing;
