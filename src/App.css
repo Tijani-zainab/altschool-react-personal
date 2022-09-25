@@ -46,7 +46,19 @@ body {
   width: 100%;
 }
 
-.btn {
+.item--url:hover {
+  color: #0B2434;
+  text-decoration: underline;
+}
+
+.news--buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news--button {
+  display: inline-block;
   background-color: #0B2434;
   color: #fff;
   border: 1px solid #0B2434;

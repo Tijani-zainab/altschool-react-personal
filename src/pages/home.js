@@ -87,8 +87,10 @@ function Home() {
                 )}
             
             </div>
-            <button className="btn" onClick={handlePrev}>Prev</button>
-            <button className="btn" onClick={handleNext}>Next</button>
+            <div className="news--buttons">
+                <button className="news--button" onClick={handlePrev}>Prev</button>
+                <button className="news--button" onClick={handleNext}>Next</button>
+            </div>
         </div>
     );
 }
