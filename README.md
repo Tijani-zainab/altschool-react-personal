@@ -6,4 +6,4 @@
 ###### React Hooks
 ###### Routing and navigation, nested routing
 ###### lazy loading 
-###### useParams, useHistory, useContext, useLocation, useSearchParams
+###### useParams, useNavigat, useHistory, useContext, useLocation, useSearchParams
