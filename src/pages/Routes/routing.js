@@ -1,5 +1,6 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
+import Pumpkin from "../../Img/pumpkin.png";
 import Home from "../home";
 import Avater from "../../components/avater";
 import ErrorPage from "../errorPage";
@@ -10,7 +11,7 @@ function Routing() {
         <div className="routes">
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/avater" element={<Avater />} />
+                <Route path="/avater" element={<Avater image = {Pumpkin}/>} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
 

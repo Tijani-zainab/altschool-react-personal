@@ -1,10 +1,11 @@
 import React, { Suspense } from 'react';
-// import Pumpkin from "../src/Img/pumpkin.png";
+import Pumpkin from "../src/Img/pumpkin.png";
 import './App.css';
 import Layout from './components/layout';
-import Home from './pages/home';
-// import Routing from './pages/Routes/routing';
-// const Avater = React.lazy(() => import("./components/avater"));
+import Routing from './pages/Routes/routing';
+// import ErrorPage from './pages/errorPage';
+const Home = React.lazy(() => import('./pages/home'));
+const Avater = React.lazy(() => import("./components/avater"));
 
 
   function App() {
@@ -13,13 +14,18 @@ import Home from './pages/home';
     <div className="App">
 
       <Layout />
-      <Home />
 
-      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Avater  image = {Pumpkin} />
-      </Suspense> */}
+      </Suspense> 
 
-      {/* <Routing /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Home />
+      </Suspense>
+
+      {/* <ErrorPage /> */}
+      
+      <Routing />
 
     </div>
   );
