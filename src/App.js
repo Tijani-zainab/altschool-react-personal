@@ -4,7 +4,7 @@ import './App.css';
 import { Layout } from './Components';
 import { Routing } from './Routes';
 const Home = React.lazy(() => import('./Pages/Home'));
-const Avater = React.lazy(() => import('./Components/Avater'));
+// const Avater = React.lazy(() => import('./Components/Avater'));
 
 
   function App() {
@@ -14,9 +14,9 @@ const Avater = React.lazy(() => import('./Components/Avater'));
 
       <Layout />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Avater  image = {Pumpkin} />
-      </Suspense> 
+      </Suspense>  */}
 
       <Suspense fallback={<div>Loading...</div>}>
         <Home />
