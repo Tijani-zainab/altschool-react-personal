@@ -69,3 +69,17 @@ body {
   margin: 10px;
   text-decoration: none;
 }
+
+/* Sign in page */
+
+.sign-in {
+  width: 100%;
+  padding: 5%;
+  margin: 0 auto;
+  border: 1px solid #0B2434;
+}
+
+.sign--btn {
+  background-color: #0B2434;
+  color: #fff;
+}

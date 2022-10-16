@@ -1,9 +1,22 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
-import { Home, ErrorPage } from '../Pages';
+import { Home, ErrorPage, SignIn } from '../Pages';
 import { Avater } from '../Components';
 
 function Routing(props) {
+
+    // const [isSignedIn, setIsSignedIn] = React.useState(false);
+
+    // React.useEffect(() => { 
+    //     const unsubscribe = auth.onAuthStateChanged((user) => {
+    //         if (user) {
+    //             setIsSignedIn(true);
+    //         } else {
+    //             setIsSignedIn(false);
+    //         }
+    // }, []);
+
+
     return (
         <div className="routes">
             <Routes>
