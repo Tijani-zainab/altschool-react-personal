@@ -12,8 +12,8 @@ function Layout(props) {
 
     return (
         <div className="layout">
-            <NavLink className="layout--item" to="/" style={({isActive}) => isActive ? activeStyle : undefined} >Home</NavLink>
-            <NavLink className="layout--item" to="/errorPage" style={({isActive}) => isActive ? activeClassName : undefined}>ErrorPage</NavLink>
+            <NavLink className="layout--item" to="/" style={({isActive}) => isActive ? activeStyle : undefined} >Login</NavLink>
+            <NavLink className="layout--item" to="/error-page" style={({isActive}) => isActive ? activeClassName : undefined}>ErrorPage</NavLink>
         </div>
     );
 }

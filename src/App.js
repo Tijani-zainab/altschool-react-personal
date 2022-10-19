@@ -13,8 +13,7 @@ import { Routing } from './Routes';
     <div className="App">
 
       <Layout />
-      <UserProfile image={Pumpkin}/>
-      <Home />
+      {/* <UserProfile image={Pumpkin}/> */}
 
       {/* <Suspense fallback={<div>Loading...</div>}>
         <Avater  image = {Pumpkin} />

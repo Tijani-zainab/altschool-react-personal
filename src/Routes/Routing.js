@@ -17,15 +17,18 @@ function Routing(props) {
                 setIsSignedIn(false);
             }
         });
+
+        return () => unsubscribe();
+
     }, []);
 
 
     return (
         <div className="routes">
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/sign-in" element={<SignIn />} />
-                <Route path="/user-profile" render={() => (!isSignedIn ? <UserProfile /> : <SignIn />)} />
+                <Route path="/" element={<SignIn />} />
+                <Route path="/sign-in" element={<UserProfile />} />
+                <Route path="/user-profile" render={() => (!isSignedIn ? <Home /> : <SignIn />)} />
                 <Route path="*" element={<ErrorPage />} />
 
             </Routes>

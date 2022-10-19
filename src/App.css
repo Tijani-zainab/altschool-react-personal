@@ -4,9 +4,13 @@
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font-family: 'Karla', sans-serif;
   background-color: #d5e9f6;
+}
+
+.App {
+  padding: 30px;
 }
 
 .layout {
@@ -73,13 +77,27 @@ body {
 /* Sign in page */
 
 .sign-in {
-  width: 100%;
+  width: 50%;
   padding: 5%;
-  margin: 0 auto;
-  border: 1px solid #0B2434;
+  margin: 5% auto 0 auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
 }
 
 .sign--btn {
   background-color: #0B2434;
   color: #fff;
+  padding: 20px 25px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "karla", sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .sign-in {
+    width: 100%;
+    margin: 50px auto;
+  }
 }
