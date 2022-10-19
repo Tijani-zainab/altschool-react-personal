@@ -1,5 +1,5 @@
-import React from "react";
-import { signInWithRedirect, auth, provider } from "../Config/Config";
+import React, { useEffect } from "react";
+import { signInWithRedirect, auth, provider, getRedirectResult } from "../Config/Config";
 import "../App.css";
 
 const SignIn = () => { 
@@ -7,6 +7,17 @@ const SignIn = () => {
     const handleSignIn = () => {
         signInWithRedirect(auth, provider);
     }
+
+
+    useEffect(() => {
+       getRedirectResult(auth).then((result) => {
+              console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+
+    }, []);
+
 
     return (
         <div className="sign-in">
