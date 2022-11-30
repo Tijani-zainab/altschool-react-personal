@@ -4,6 +4,8 @@ import "../App.css";
 
 const SignIn = () => { 
 
+    const [signIn, setSignIn] = React.useState(false);
+
     const handleSignIn = () => {
         signInWithRedirect(auth, provider);
     }
@@ -11,8 +13,13 @@ const SignIn = () => {
 
     useEffect(() => {
        getRedirectResult(auth).then((result) => {
-              console.log(result);
-        }).catch((error) => {
+            if(result.user) {
+                setSignIn(true);
+            } else {
+                setSignIn(false);
+            }
+        })
+        .catch((error) => {
             console.log(error);
         });
 

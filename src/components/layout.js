@@ -8,12 +8,12 @@ function Layout(props) {
         textDecoration: "underline",
     };
     
-    let activeClassName = "underline";
+    // let activeClassName = "underline";
 
     return (
         <div className="layout">
             <NavLink className="layout--item" to="/" style={({isActive}) => isActive ? activeStyle : undefined} >Login</NavLink>
-            <NavLink className="layout--item" to="/error-page" style={({isActive}) => isActive ? activeClassName : undefined}>ErrorPage</NavLink>
+            <NavLink className="layout--item" to="/error-page" style={({isActive}) => isActive ? activeStyle : undefined}>ErrorPage</NavLink>
         </div>
     );
 }

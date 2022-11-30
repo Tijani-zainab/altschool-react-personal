@@ -23,4 +23,11 @@ const auth = getAuth(); // Initialize Auth
 
 //const result = getRedirectResult(auth); // Initialize Redirect
 
-export { app, provider, auth, signInWithRedirect, GoogleAuthProvider, getRedirectResult };  
+export { 
+  app, 
+  provider, 
+  auth, 
+  signInWithRedirect, 
+  GoogleAuthProvider, 
+  getRedirectResult 
+};  
